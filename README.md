@@ -12,9 +12,6 @@ You should not include analysis, plots, discoveries, that aren’t directly rela
 ## Data Collection
 For this analysis, the main source of data contains pot holes reported through 3-1-1 service requests in the city of Chicago, IL from 2010 through 2018. The data was made available by the City of Chicago, along with data on traffic crashes reported through the electronic crash reporting system under the jurisdiction of the Chicago Police Department. Additionally, income data by neighborhood was sourced from the U.S. Census Bureau to analyze the correlation between pothole repairs and surrounding household residential income, and arrest data from the Chicago Police Department was used to investigate geographic relationships between density of pot holes and surrounding area criminal activity. 
 
-## Methodology
-Data cleaning info here.... @ Brandon? 
-
 ## Analysis: Pothole Status by Neighborhood
 To visualize pothole service request status geographically, a map was created plotting open versus completed pothole requests in the Chicago area. A basemap of Chicago neighborhoods was used to analyze any correlation and provide visual context to the income analysis explore below. As seen on the map, there do appear to be neighborhoods with a higher ratio of open to closed pothole service requests, although more rigorous analysis is needed to determine an exact relationship. For example, a neighborhood may appear to have a higher concentration of open requests, however, due to the sheer volume of completed requests over the time frame, it is difficult to visually determine the true ratio. 
 ![Plot 1](artifacts/pothole_status_map.png)
