@@ -1,13 +1,4 @@
-# Chicago Potholes Data (2011 - 2017) or some better title
-Requirements for reporting your analysis:
-
-The goal of the analysis is must be clearly articulated
-The report must include your methodology
-The report must include a description of your project and its findings (or lack of findings)
-Your findings (or non-findings) must be clearly documented
-The limitations of the analysis must be clearly outlined
-Extensions of your analysis or areas for more research must be included in your report
-You should not include analysis, plots, discoveries, that aren’t directly related to your findings – you can put them as an appendix in another file if you like
+# Chicago Potholes Data (2011 - 2017) 
 
 ## Data Collection
 For this analysis, the main source of data contains pot holes reported through 3-1-1 service requests in the city of Chicago, IL from 2010 through 2018. The data was made available by the City of Chicago, along with data on traffic crashes reported through the electronic crash reporting system under the jurisdiction of the Chicago Police Department. Additionally, income data by neighborhood was sourced from the U.S. Census Bureau to analyze the correlation between pothole repairs and surrounding household residential income, and arrest data from the Chicago Police Department was used to investigate geographic relationships between density of pot holes and surrounding area criminal activity. 
@@ -29,10 +20,9 @@ In the scatterplot, the color scale is by number of potholes, with the darkest p
 
 ## Analysis: Potholes vs. Income for the Chicago Area 
 To see the code for this part of the analysis, please refer to the following [link](Data_Cleaning/pothole_data/Pothole_data.ipynb). This uses `Pothole Data` from the Chicago area.
-I perform some simple data cleaning commands for the Potholes dataset by changing messy names of columns, sorting some of the variables by first name, and dropping duplicate values. I also replace missing values for the numberical columns with either the mean, mode, the zero value, or a pre-specified value. I check to make sure that none of the columns have any null entries in them. The I go ahead and perform some simple statistics for the pothole data to show the mean, standard deviation, min, max and the 25%, 50% and 75% quantiles for each variable in the dataset. I create a correlation table among variables in the dataset. Lastly, I create a scatterplot that shows the Number of Potholes in Block by Creation Date.  
 
-I also look at the `Income Data` in the Chicago area by first merging it with the `Pothole Data`. I perform a simple regression between the `The Number of Potholes in Block` as the dependent variable and the `Per Capita Income` and `Hardship Index` as the independent variables. The result is the following 
-In this table we see that a one unit increase in per capita income leads to a decrease of approximately 2.9 units in the number of potholes in the block, a coefficient which is statistically significant. Similarly, we see that a one unit increase in the hardship index leads to a decrease of approximately 0.001 in the number of potholes in the block, a coefficient which is nonetheless not statistically significant.
+We performed a simple regression between the `The Number of Potholes in Block` as the dependent variable and the `Per Capita Income` and `Hardship Index` as the independent variables. The result is the following: 
+In this table we see that a one unit increase in per capita income leads to a decrease of approximately 2.9 units in the number of potholes in the block, a coefficient which is statistically significant. Similarly, we see that a one unit increase in the hardship index leads to a decrease of approximately 0.001 in the number of potholes in the block, a coefficient which is not statistically significant.
 
 ![Table 1](artifacts/PotholeData_statistics.png) 
 ![Plot 4](artifacts/Scatter_plot.png) 
